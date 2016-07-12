@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from setuptools import setup, find_packages
+from distutils.core import setup
 from codemirror import __version__
 
 setup(
@@ -9,8 +9,12 @@ setup(
     author='Andrey',
     author_email='and@rey.im',
     url='https://github.com/onrik/django-codemirror',
-    description='Django codemirror widget',
-    packages=find_packages(),
+    description='Django form widget for CodeMirror text editor',
+    packages=['codemirror'],
+    package_data={'codemirror': [
+        'static/css/*.css',
+        'static/js/*.js'
+    ]},
     classifiers=[
         'Framework :: Django',
         'Intended Audience :: Developers',
