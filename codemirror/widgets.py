@@ -16,7 +16,7 @@ class CodeMirror(forms.Textarea):
         }
 
     def __init__(self, **kwargs):
-        self.config = default_config
+        self.config = dict(default_config)
         self.config.update(kwargs)
         super(CodeMirror, self).__init__()
 
