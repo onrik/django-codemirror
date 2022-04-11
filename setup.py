@@ -11,20 +11,14 @@ setup(
     url='https://github.com/onrik/django-codemirror',
     description='Django form widget for CodeMirror text editor',
     packages=['codemirror'],
-    package_data={'codemirror': [
-        'static/css/*.css',
-        'static/js/*.js'
-    ]},
     classifiers=[
+        'Development Status :: 5 - Production/Stable',
         'Framework :: Django',
         'Intended Audience :: Developers',
         'Environment :: Web Environment',
         'Operating System :: OS Independent',
+        'License :: OSI Approved :: MIT License',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.5',
     ],
 )
